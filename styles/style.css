@@ -1,0 +1,695 @@
+/*********************************
+общие стили для всех элементов
+*********************************/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+
+body {
+    /* overflow: hidden; */
+    background-color: #fff;
+    color: #332f2f;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* создаю сетку  */
+.col-1 {width: 8.33%;}
+
+.col-2 {width: 16.66%;}
+
+.col-3 {width: 25%;}
+
+.col-4 {width: 33.33%;}
+
+.col-5 {width: 41.66%;}
+
+.col-6 {width: 50%;}
+
+.col-7 {width: 58.33%;}
+
+.col-8 {width: 66.66%;}
+
+.col-9 {width: 75%;}
+
+.col-10 {width: 83.33%;}
+
+.col-11 {width: 91.66%;}
+
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 3%;
+}
+h1 {
+    margin: 0;
+}
+
+h2{
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* создаю полосу под заголовком */
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #02704A;
+    content: "";
+    width: 250px;
+    margin: 0 auto;   /*равнение по центру */
+    margin-top: 30px;
+}
+
+h3{
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 80%;
+}
+section{
+    padding: 100px 0;
+    clear: both;
+}
+/* .centered_horizontaly{
+    max-width: 1140px;
+    margin: 0 auto;
+} */
+
+/* очистка float */
+.float_clearing{
+    zoom:1;
+}
+
+.float_clearing:after{
+    zoom:1;
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+section p,
+#contact_form{
+    font-size: 90%;
+}
+
+/*********************************
+ стили для заголовка
+*********************************/
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url(../images/header-bg.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-text {
+    padding-top: 150px;
+}
+
+#header-title {
+    max-width: 45%;
+    margin-left: 8.33%;
+    padding: 15px;
+    text-transform: uppercase;
+    color: #02704A;
+    letter-spacing: 0.18em;
+    font-size: 2.2vw;
+    line-height: 5.0vw;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#header_buttons {
+    margin-top: 20px;
+    margin-left: 8.33%;
+    color: #02704A;
+    padding: 15px;
+}
+
+#logo_text {
+    float: left;
+}
+/* редактирую вставленный логотип компании */
+#logo_img {
+    height: 70px;
+    width: auto;
+    float: left;
+    /* margin-left: 15px; */
+}
+
+#main_nav {
+    float: right;
+    list-style: none;
+}
+/* редактирую стиль кнопок навигации */
+#logo_text a {
+    color: #02704A;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+#main_nav li {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 0.7em;
+}
+
+#main_nav li a:link,
+#main_nav li a:visited {
+    opacity: 0.7;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(8, 148, 99);   
+}
+#main_nav li a:hover,
+#main_nav li a:active {
+    opacity: 1; 
+}
+nav {
+    padding: 25px;
+    height: 70px;
+}
+
+/*********************************
+ стили для кнопок
+*********************************/
+
+/* использую псевдоклассы для изменения состояния ссылок при наведении на них */
+.button:link,
+.button:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #02704A;
+    transition: background-color 0.4s;
+}
+/* при наведении на ссылку меняю цвет bg */
+.button:hover,
+.button:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    background: #bbb;
+}
+
+.button_order:link,
+.button_order:visited,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background: #FFFFFF;
+    border: 1px solid #02704A
+}
+
+.button_more:link,
+.button_more:visited {
+    color:#fff;
+    border: 1px solid #FFFFFF;
+}
+
+.button_order:hover,
+.button_order:active,
+input[type=submit] {
+    background: #bbb;
+}
+
+/*********************************
+ стили для информации о компании
+*********************************/
+#intro_text{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+.features_icons{
+    font-size: 250%;
+    color: #02704A;
+    margin-bottom: 15px;
+}
+
+
+/*********************************
+ стили для картинок на странице
+*********************************/
+.images_container{
+    list-style: none;
+    width: 100%;
+}
+.images_container li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.food_image{
+    background-color: #000;
+    width: 100%; /*от родителя li*/
+    overflow: hidden;
+    
+}
+.food_image img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.2);
+    transition: transform 0.5s, opacity 0.5s;
+    
+
+}
+.food_image img:hover{
+    transform: scale(1.05);
+    opacity: 1;
+    
+}
+
+/*********************************
+ стили инструкции для заказа
+*********************************/
+#phone_image{
+    width: 60%;
+}
+#phone_image_container{
+    margin-left: 10%;
+    margin-right: 3%;
+}
+.order_steps{
+    margin-top: 100px;
+}
+.order_steps div{
+    color: #02704A;
+    border: 2px solid #02704A;
+    width: 50px;
+    height: 50px;
+    border-radius: 150px;
+    text-align: center;
+    padding: 5px;
+    font-size: 150%;
+    display: inline-block;
+    /* float: left; */
+    margin-right: 20px;
+}
+.order_steps p{
+    padding-top: 12px;
+}
+/* Форматирую ссылки на gp && appstore */
+.app_button img{
+    height: 70px;
+    margin-right: 10px;
+}
+.order_steps:last-of-type{
+    margin-bottom: 100px;
+}
+
+/*********************************
+ стили городов (адресов)
+*********************************/
+.col-3 img{
+    width: 100%;
+}
+.city_info{
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    text-align: left;
+    font-size: 60%;
+}
+
+/* стилизация иконок */
+.info_icon{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #02704A;
+    font-size: 110%;
+}
+
+#cities-section{
+    background: #e5e3e3;
+}
+
+
+/*********************************
+ стили области, где можно написать письмо
+*********************************/
+#contact_form{
+    margin: 0 auto;
+    width: 50%;
+}
+input[type=text],
+input[type=email]
+select,
+textarea{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid #e5e3e3;
+}
+textarea{
+    height: 150px;
+}
+#button{
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+
+/*********************************
+ стили подвала
+*********************************/
+footer{
+    text-align: center;
+    padding: 100px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(19, 112, 74, 1));
+}
+#footer_nav{
+    margin-bottom: 20px;
+}
+#footer_social_links {
+    list-style: none;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#footer_social_links li{
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 0.7em;
+}
+
+#footer_nav {
+    list-style: none;
+}
+#footer_nav li {
+    margin-right: 30px;
+    font-size: 0.7em;
+}
+
+#footer_nav li a:link,
+#footer_nav li a:visited {
+    opacity: 0.7;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(8, 148, 99);   
+}
+#footer_nav li a:hover,
+#footer_nav li a:active {
+    opacity: 1; 
+}
+#footer_social_links {
+    list-style: none;
+}
+#footer_social_links li {
+    margin-right: 30px;
+    font-size: 0.7em;
+}
+
+#footer_social_links li a:link,
+#footer_social_links li a:visited {
+    opacity: 0.7;
+    font-size: 150%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(8, 148, 99);   
+}
+#footer_social_links li a:hover,
+#footer_social_links li a:active {
+    opacity: 1; 
+}
+#footer_text{
+    font-size: 70%;
+    color: #fff;
+}
+
+
+/*********************************
+ медиа - запросы
+*********************************/
+
+@media only screen and (max-width: 970px) {
+   [class *="col-"] {
+       width: 100%
+    }
+    .button_order{
+        margin-bottom: 20px;
+    }
+    #intro_text{
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 100%;
+    }
+    .features_icons{
+        font-size: 250%;
+        color: #02704A;
+        margin-bottom: 15px;
+        margin-left: 20px;
+    }
+    h2{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    p{
+        margin-left:8px ;
+    }
+    .order_steps div{
+        margin-left: 10px;
+    }
+    /* .app_button img {
+        margin-left: 70px;
+    } */
+}   #contact_form{
+    width: 80%;
+}
+
+/*********************************
+ modal - window
+*********************************/
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.5);
+}
+
+.modal__dialog {
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.modal__content {
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 4px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.modal__close {
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    font-size: 30px;
+    color: #000;
+    opacity: .5;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.modal__title {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.modal__input {
+    display: block;
+    margin: 20px auto 20px auto;
+    width: 401px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,.2);
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 20px;
+    outline: 0;
+}
+
+.modal .btn {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+}
+
+.btn_min {
+    height: 50px;
+}
+
+.btn_dark {
+    background-color: #02704a;
+    color: #fff;
+    border: none;
+}
+
+
+
+
+/* order_ref */
+.order_ref{
+    cursor: pointer;
+    text-decoration: underline;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.preview {
+    padding: 28px 0 100px 0;
+    position: relative;
+}
+
+.tabcontent img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tabheader {
+    width: 280px;
+    padding: 35px 30px;
+    background-color: #fff;
+}
+
+.tabcontent {
+    width: 850px;
+    position: relative;
+}
+
+.preview__life {
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 35px;
+    margin-top: 35px;
+}
+
+.tabheader h3 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.tabcontent__descr {
+    position: absolute;
+    top: 300px;
+    right: -177px;
+    width: 550px;
+    height: 359px;
+    background: rgba(10, 138, 106, 0.8);
+    padding: 25px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    color: rgba(0,0,0,.7);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bgc_blue {
+    position: absolute;
+    right: 0;
+    top: -155px;
+    width: 50vw;
+    height: 900px;
+    background: rgba(146,242,255,.15);
+    z-index: -1;
+}
+
+.tabcontainer {
+    display: flex;
+    width: 1130px;
+    margin: 0 auto;
+    box-shadow: 0 4px 30px rgba(0,0,0,.25);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.tabheader__item {
+    font-weight: 700;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+    color: rgba(0,0,0,.6);
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.tabheader__item_active {
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.tabheader__items {
+    margin-top: 35px;
+    padding-left: 26px;
+    border-left: 1px solid #000;
+}

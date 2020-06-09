@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/ionicons.min.css">
+    <title>кофе с собой в Торжке</title>
+</head>
+
+<body>
+    <header>
+        <img id="logo_img" src="images/logo.png" alt="company_logo">
+        <nav>
+            <h5 id="logo_text"><a href="#">Торжок-пирожок</a></h5>
+            <ul id="main_nav">
+                <li><a href="#">Домой</a></li>
+                <li><a href="#food_images_section">Меню</a></li>
+                <li><a href="#introduction">О нас</a></li>
+                <li><a href="#how_to_order_section">Заказ</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav> 
+        <div class="header-text">
+            <h1 id="header-title">Девиз кофейни</h1>
+
+            <div id="header_buttons">
+                <a href="#" data-modal class="button button_order">Сделать заказ</a>
+                <a href="#" class="button button_more">Узнать больше</a>
+            </div>
+
+        </div>
+
+    </header>
+    <!--___________________ создаю секцию с описанием компании___________________ -->
+<section id="introduction">
+    <div>
+        <h2>Торжокские кофейни</h2>
+        <p id="intro_text">Кофе, лучше которого не найти</p>
+    </div>
+    <!-- тексты о компании -->
+    <div class="col-3">
+        <ion-icon name="checkbox-outline" class="features_icons"></ion-icon>
+        <p>
+            Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение модели развития. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу.
+        </p>
+    </div>
+    <div class="col-3">
+        <ion-icon name="bar-chart-outline" class="features_icons"></ion-icon>
+        <p>
+            Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Равным образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров.
+        </p>
+    </div>
+    <div class="col-3">
+        <ion-icon name="alert-circle-outline" class="features_icons"></ion-icon>
+        <p>
+            Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации форм развития. . С другой стороны укрепление и развитие структуры обеспечивает участие в формировании систем массового участия.
+        </p>
+    </div>
+    <div class="col-3">
+        <ion-icon name="albums" class="features_icons"></ion-icon>
+        <p>
+            Повседневная практика показывает, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. . Значимость этих проблем настолько очевидна, что консультация с широким активом играет важную роль в формировании новых предложений.
+        </p>
+    </div>
+</section>
+
+<!--________________ созлаю секцию с меню______________ -->
+
+<section id="food_images_section">
+    <div class="preview">
+        <div class="bgc_blue"></div>
+        <div class="container">
+            <div class="tabcontainer">
+                <div class="tabcontent">
+                    <img src="images/coffee-1.jpg" alt="vegy">
+                    <div class="tabcontent__descr">
+                        "Ла́тте" (англизированный и сокращенный вариант от итал. caffè latte  — «кофе с молоком») — кофейный напиток родом из Италии, состоящий из молока (итал. latte) и кофе эспрессо. Варится на основе молока, образуя в чашке или бокале трёхслойную смесь из кофе, молока и пены.
+                    </div>
+                </div>
+                <div class="tabcontent">
+                    <img src="images/coffee-2.jpg" alt="elite">
+                    <div class="tabcontent__descr">
+                        Эспре́ссо (от итал. espresso) — метод приготовления кофе путём прохождения горячей воды (около 90 °C) под давлением 9 бар через фильтр с молотым кофе.
+                        В России слово «эспрессо» начинает использоваться с начала 1990-х годов, вытеснив название «маленький двойной», использовавшееся ранее.
+                    </div>
+                </div> 
+                <div class="tabcontent">
+                    <img src="images/coffee-3.jpg" alt="post">
+                    <div class="tabcontent__descr">
+                        Капучи́но (от итал. cappuccino — капуцин) — кофейный напиток итальянской кухни на основе эспрессо с добавлением в него подогретого вспененного молока.
+                        Происхождение названия напитка связано с тем, что в Европе XVII века название ордена капуцинов служило,и для обозначения характерного цвета, который имели рясы монахов этого ордена.                                     
+                    </div>
+                </div>
+                <div class="tabcontent">
+                    <img src="images/coffee-4.jpg" alt="vegy">
+                    <div class="tabcontent__descr">
+                        Америка́но (итал. Caffè Americano — кофе по-американски) — способ приготовления кофе, заключающийся в соединении определённого количества горячей воды и эспрессо.
+                        Напиток придумали в Италии ещё во время Второй мировой войны для американцев как аналог американского популярного фильтрового напитка «регуляр».
+
+
+                    </div>
+                </div> 
+                <div class="tabheader">
+                    <h3>Выберите свой кофе!</h3>
+                    <div class="tabheader__items">
+                        <div class="tabheader__item tabheader__item_active">Латте</div>
+                        <div class="tabheader__item">Эспрессо</div>
+                        <div class="tabheader__item">Капучино</div>
+                        <div class="tabheader__item">Американо</div>
+                    </div>
+                </div>
+            </div>
+            <div class="preview__life">Насладись бодрящим вкусом кофе!</div>
+        </div>
+    </div>
+
+ 
+
+<!--________________ секция с адресами компании в разных местах ___________________-->
+<section id="cities-section">
+    <h2>Вы можете найти нас здесь</h2>
+    <div class="float_clearing">
+        <div class="col-3">
+            <img src="images/kharkiv.jpg" alt="kharkiv">
+            <h3>ул. Авиационная</h3>
+            <div class="city_info">
+                <ion-icon class="info_icon" name="home-outline"></ion-icon>
+                д.3 стр.7
+            </div>
+            <div class="city_info">
+                <ion-icon class="info_icon" name="call-outline"></ion-icon>
+                8-123-456-12-22
+            </div>
+            <div class="city_info">
+                <ion-icon class="info_icon" name="at-outline"></ion-icon>
+                karp@mail.ru
+            </div>
+        </div>
+
+        <div class="col-3">
+            <img src="images/kiyev.jpg" alt="kiyev">
+            
+            <h3>ул. Мира</h3>
+            <div class="city_info">
+                <ion-icon class="info_icon" name="home-outline"></ion-icon>
+                д.1
+            </div>
+            <div class="city_info">
+                <ion-icon class="info_icon" name="call-outline"></ion-icon>
+                8-123-456-12-22
+            </div>
+            <div class="city_info">
+                <ion-icon class="info_icon" name="at-outline"></ion-icon>
+                karp@mail.ru
+            </div>
+        </div>
+
+        <div class="col-3">
+            <img src="images/lviv.jpg" alt="lviv">
+            
+            <h3>ул. Ленина</h3>
+            <div class="city_info">
+                <ion-icon class="info_icon" name="home-outline"></ion-icon>
+                вл. 22
+            </div>
+            <div class="city_info">
+                <ion-icon class="info_icon" name="call-outline"></ion-icon>
+                8-123-456-12-22
+            </div>
+            <div class="city_info">
+                <ion-icon class="info_icon" name="at-outline"></ion-icon>
+                karp@mail.ru
+            </div>
+         </div>
+
+        <div class="col-3">
+            <img src="images/odessa.jpg" alt="odessa">
+            
+            <h3>ул. Спортивная</h3>
+            <div class="city_info">
+                <ion-icon class="info_icon" name="home-outline"></ion-icon>
+                д.3 к.8
+            </div>
+            <div class="city_info">
+                <ion-icon class="info_icon" name="call-outline"></ion-icon>
+                8-123-456-12-22
+            </div>
+            <div class="city_info">
+                <ion-icon class="info_icon" name="at-outline"></ion-icon>
+                karp@mail.ru
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- секция, где пользователь может отправить письмо владельцу сайта -->
+<section id="contact_form_section">
+    <h2>Рады ответить на ваши вопросы!</h2>
+    <div id="contact_form">
+        <div class="form_row float_clearing">
+            <div class="col-6">
+                <label for="name">Имя</label>  <!--при помощи for привязываю имя к input с id name -->
+            </div>
+            <div class="col-6">
+                <input type="text" name="name" id="name" placeholder="введите имя">
+            </div>
+        </div>
+        <div class="form_row float_clearing">
+            <div class="col-6">
+                <label for="email">e-mail</label>  <!--при помощи for привязываю имя к input с id name -->
+            </div>
+            <div class="col-6">
+                <input type="text" name="email" id="email" placeholder="введите email">
+            </div>
+        </div>
+        <div class="form_row float_clearing">
+            <div class="col-6">
+                <label for="topic">Выберите тему</label>  <!--при помощи for привязываю имя к input с id name -->
+            </div>
+            <div class="col-6">
+                <select name="topic" id="topic">
+                    <option value="feedback">Отзыв</option>
+                    <option value="question">Вопрос</option>
+                    <option value="other">Другое</option>
+                </select>
+            </div>
+        </div>
+        <div class="form_row float_clearing">
+            <div class="col-6">
+                <label for="news">Хочу получать новости от нашей компании</label>  <!--при помощи for привязываю имя к input с id name -->
+            </div>
+            <div class="col-6">
+                <input type="checkbox" name="news" id="news" checked> Да
+            </div>
+        </div>
+        <div class="form_row float_clearing">
+            <div class="col-6">
+                <label for="textarea">Напишите нам письмо</label>  <!--при помощи for привязываю имя к input с id name -->
+            </div>
+            <div class="col-6">
+                <textarea name="textarea" id="textarea" placeholder="Введите текст"></textarea>
+            </div>
+        </div>
+        <div class="form_row float_clearing">
+            <div class="col-6">
+                <input id="button" type="submit" value="Отправить">
+            </div>
+        </div>
+    </div>    
+    </section>
+        
+
+<!-- _______________ создаю секцию с инструкцией как сделать заказ _______________ -->
+<section id="how_to_order_section">
+    <h2>Закажите доставку блюд на дом!</h2>
+<!-- создаю контейнер с картинкой телефона шириной 1/3 окна -->
+<div id="phone_image_container" class="col-4" >
+    <img id="phone_image" src="images/iphone.png" alt="telephone">
+</div>
+<!-- контейнер с инструкцией  -->
+<div class="col-5">
+    <div class="order_steps">
+        <div>1</div>
+        <p>Выберите понравившееся блюдо</p>
+    </div>
+    <div class="order_steps">
+        <div>2</div>
+        <p>Сделайте заказ в мобильном приложении или <a class="order_ref" href="#" data-modal>на сайте</a> </p>
+    </div>
+    <div class="order_steps">
+        <div>3</div>
+        <p>Получите заказ в течении 20 минут</p>
+    </div>
+</div>
+<a class="app_button" href="#"><img src="images/app-store-logo.jpg" alt="app-store-logo"></a>
+<a class="app_button" href="#"><img src="images/google-play-logo.png" alt="google-play-logo"></a>
+</section>
+
+<!-- modal window -->
+
+<div class="modal hide">
+    <div class="modal__dialog">
+        <div class="modal__content">
+            <form action="#">
+                <div data-close class="modal__close">&times;</div>
+                <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                <button class="btn btn_dark btn_min">Перезвонить мне</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- footer -->
+
+<footer>
+    <div id="footer_nav">
+        <ul>
+            <li><a href="#">Домой</a></li>
+            <li><a href="#">Меню</a></li>
+            <li><a href="#introduction">О нас</a></li>
+            <li><a href="#">Заказ</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </div>
+    <div id="footer_social_links">
+        <ul>
+            <li><a href="#"><ion-icon class="footer_icons" name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon class="footer_icons" name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon class="footer_icons" name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon class="footer_icons" name="logo-youtube"></ion-icon></a></li>
+            <li><a href="#"><ion-icon class="footer_icons" name="logo-vk"></ion-icon></a></li>
+        </ul>
+    </div>
+    <div id="footer_text">
+        <p>Все права защищены &copy;</p>
+        <p>Возрастное ограничение 0+</p>
+    </div>
+</footer>
+
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
+
+
